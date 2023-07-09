@@ -59,7 +59,7 @@ function total(checkoutObject) {
         for (let [key, value] of Object.entries(checkoutObject)) {
             total += calculatePrice(key, value);
         }
-        console.log("$", total);
+        console.log("$", total.toFixed(2));
     }catch(error){
         console.log("Error in calculating price of product", error);
     }
